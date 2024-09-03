@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jordan Biehl</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body id="theme-button">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid" id="navbar-fixed">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Jordan Biehl</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="experience.html">Experience</a></li>
+          </ul>
+          <button id="theme-toggle" onclick="toggleBackgroundImage()">Toggle Background</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container text-center" id="jumbotron-img">
+        <h1>Jordan Biehl</h1>
+        <h2>Software Engineer</h2>
+      </div>
+    </div>
+
+    
+
+    <footer class="container-fluid text-center">
+      <p>Jordan Biehl</p>
+      <p>Created for Multiverse Project</p>
+    </footer>
+    <script>
+      let currentImage = 1;
+
+      function toggleBackgroundImage() {
+        const element = document.getElementById("theme-button"); // Replace with your element's ID
+
+        if (currentImage === 1) {
+          element.style.backgroundImage = "url('images/lightimg.jpg')"; // Replace with the URL of your second image
+          currentImage = 2;
+        } else {
+          element.style.backgroundImage = "url('images/indeximg.jpg')"; // Replace with the URL of your first image
+          currentImage = 1;
+        }
+      }
+    </script>
+  </body>
+</html>
