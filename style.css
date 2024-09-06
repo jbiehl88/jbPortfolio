@@ -82,7 +82,7 @@ body{
   }
 
   #theme-toggle {
-    margin: 5px 5px 5px 30px;
+    margin: 5px;
     position: fixed;
     top: 6px;
     right: 60px;
